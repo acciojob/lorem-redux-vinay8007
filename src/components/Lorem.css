@@ -1,0 +1,47 @@
+/* wrapper */
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* titles */
+  .main-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .sub-title {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* 🔥 MAIN FIX IS HERE 🔥 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 30px;
+    text-align: left;
+  }
+  
+  /* card */
+  .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  .label {
+    font-weight: 600;
+    margin-right: 6px;
+  }
+  
+  /* responsive */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; /* mobile = 1 column */
+    }
+  }
+  
